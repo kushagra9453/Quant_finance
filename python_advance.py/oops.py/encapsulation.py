@@ -72,4 +72,5 @@ print(s.get_backtest())
 
 
 print(s._SecretStrategy__algorithm)        
+
 print(s._SecretStrategy__run_backtest())               
