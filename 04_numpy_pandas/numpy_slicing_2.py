@@ -16,10 +16,10 @@ print(arr2)
 arr3=arr[2:7]
 print(arr3)
 
-arr4=arr[:2]
+arr4=arr[::2]
 print(arr4)
 
-arr5=arr[5:]
+arr5=arr[::-1]
 print(arr5)
 
 arr = np.array([[1, 2, 3, 4],

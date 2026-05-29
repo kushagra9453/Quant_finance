@@ -41,25 +41,4 @@ print(arr2)
 arr3=arr.ndim
 print(arr3)
 
-arr = np.array([10, 20, 30, 40, 50, 60, 70, 80, 90, 100])
 
-# Extract:
-# 1. First 3 elements
-# 2. Last 3 elements
-# 3. Elements from index 2 to 6
-# 4. Every 2nd element
-# 5. Reverse the array
-arr1=arr[:3]
-print(arr1)
-
-arr2=arr[-3:]
-print(arr2)
-
-arr3=arr[2:7]
-print(arr3)
-
-arr4=arr[:2]
-print(arr4)
-
-arr5=arr[5:]
-print(arr5)
