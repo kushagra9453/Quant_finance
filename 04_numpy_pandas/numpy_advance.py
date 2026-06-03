@@ -71,3 +71,42 @@ price_paths = start_price * np.cumprod(1 + daily_returns, axis=1)
 print("Monte Carlo Simulation Results:")
 print(f"Shape: {price_paths.shape}")  # (5, 253)
 print(f"Final prices after 1 year: {price_paths[:, -1]}")
+
+
+#CUMSUM AND CUMPROD
+
+# Create an array of daily returns
+daily_returns = np.array([0.01, 0.02, -0.01, 0.03, -0.02])
+
+# Calculate cumulative sum
+daily=np.cumsum(daily_returns)
+print(daily)
+# Multipliers for growth (1 + return)
+multipliers=np.cumprod(1+daily_returns)
+print(multipliers)
+#############################
+
+start_price = 100
+daily_returns = np.array([0.01, -0.005, 0.02, -0.01, 0.015])
+# Calculate cumulative product of (1 + returns)
+start_price1=np.cumprod(1+daily_returns)
+print(start_price* start_price1)
+
+################################
+import numpy as np
+
+# Portfolio daily returns over 10 days
+portfolio_returns = np.array([0.005, -0.002, 0.01, -0.003, 0.007, 
+                               0.001, -0.004, 0.008, -0.001, 0.006])
+
+# Calculate cumulative returns
+g=np.cumprod(1+portfolio_returns)
+print(g)
+
+# Calculate equity curve (starting with ₹1,00,000)
+initial_capital = 100000
+h=initial_capital*(1+g)
+print(h)
+
+
+
