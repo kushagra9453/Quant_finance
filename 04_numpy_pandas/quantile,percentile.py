@@ -65,3 +65,4 @@ print(mean_without_nan)
 arr = np.array([1, 2, np.nan, 4, 5])
 s=np.nanstd(arr)
 print(s)
+

@@ -82,3 +82,5 @@ row_mean = data.mean(axis=1)   # shape (3,)
 m=data-row_mean[:,np.newaxis]
 print(m)
 
+
+

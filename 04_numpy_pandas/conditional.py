@@ -35,3 +35,8 @@ b = np.array([10, 20, 30, 40])
 k=np.where(a%2==0,b,a)
 print(k)
 
+arr = np.array([1, 5, 10, 15, 20])
+# Clip values to be between 5 and 15 (inclusive)
+# If value < 5 → 5, if value > 15 → 15, else keep value
+result = np.where(arr < 5, 5, np.where(arr > 15, 15, arr))
+print(result)

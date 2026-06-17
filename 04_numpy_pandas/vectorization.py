@@ -22,3 +22,9 @@ print(t)
 arr = np.array([1, 3, 6, 2, 8, 4])
 result = np.clip(arr, 2, 5)
 print(result)
+
+##bollean
+arr = np.array([1, 4, 2, 5, 3, 6])
+mask = arr > 3
+print(mask)
+
